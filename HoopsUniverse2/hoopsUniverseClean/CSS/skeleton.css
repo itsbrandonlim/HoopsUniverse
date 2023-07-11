@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+button {
+    border: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 64px 1fr 64px;
+
+    height: auto; 
+}
+
+.navPlaceHolder{
+    grid-row: 1;
+}
+
+.navBar {
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    height: 64px;
+
+    background-color: black;
+    color: white;
+
+    box-shadow: 0px 8px 4px -4px grey;
+
+    display: grid;
+    grid-template-columns: 80px 320px 1fr 80px 80px 120px 80px;
+}
+
+.navBar img {
+    grid-column: 1;
+    display: flex;
+    margin: auto;
+    margin-left: 24px;
+
+    width: 52px;
+
+    border-radius: 32px;
+}
+
+.navBar h2 {
+    grid-column: 2;
+    margin: auto;
+    margin-left: 16px;
+    position: relative;
+
+    transition: font-size .3s ease;
+}
+
+.navBar h2:hover {
+    font-size: 180%;
+}
+
+.blot0 {
+    position: absolute;
+    z-index: -1;
+    
+    width: 100%;
+    height: 10%;
+    top: 100%;
+  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  
+    transition: transform .3s ease;
+  
+    background-color: gold;
+}
+
+h2:hover .blot0 {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navBar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+    margin: auto;
+
+    transition: border-bottom .3s ease;
+}
+
+.navBar a:hover {
+    border-bottom: 3px solid goldenrod;
+}
+
+#home {
+    grid-column: 4;
+    
+}
+
+#shoes {
+    grid-column: 5;
+}
+
+#acc {
+    grid-column: 6;
+}
+
+#faq {
+    grid-column: 7;
+}
+
+.navMenu {
+    display: none;
+
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    height: 256px;
+
+    top: 64px;
+
+    background-color: black;
+}
+
+.navMenu li {
+    position: relative;
+    display: block;
+
+    width: 100%;
+    height: 60px;
+}
+
+.navMenu a {
+    position: absolute; 
+    margin: auto;
+    margin-top: 16px;
+    margin-left: 16px;
+
+    width: 90%;
+    font-size: 24px;
+
+    text-decoration: none;
+    color: white;
+}
+
+a .blot0 {
+    height: 10%;
+  
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    transition: transform .6s ease;
+    background-color: white;
+}
+a:hover .blot0 {
+    transform: scaleX(0);
+    transform-origin: bottom left;
+}
+
+.footer {
+    grid-row: 3;
+
+    background-color: black;
+    width: 100%;
+    height: 100%;
+
+    box-shadow:  0px -6px 8px rgba(0, 0, 0, 0.2);
+
+    display: grid;
+    grid-template-columns: 360px auto 64px 64px 16px;
+}
+
+.footer h3 {
+    grid-column: 1;
+    grid-row: 1;
+
+    color: white;
+    margin: auto;
+}
+
+.ig {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.yt {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.footer img {
+    height: 40px;
+    width: 40px;
+
+    margin: auto;
+}
+
+.gridContainer {
+    grid-row: 2;
+
+    width: 100%;
+}
+
+/* Icon 3 */
+.hamburger {
+    display: none;
+    position: relative;
+
+    width: 36px;
+    height: 28px;
+
+    margin: auto;
+    margin-right: 32px;
+}
+.hamburger div {
+    position: absolute;
+
+    width: 100%;
+    height: 4px;
+    font-size: 0;
+
+    background: white;
+}
+.ham2 {
+    top: 50%;
+    transform: translateY(-50%);  
+}
+.ham3 {
+    bottom: 0;
+}
+
+/* Medium devices */
+@media only screen and (max-width: 768px) {
+    .navBar a {
+      display: none;
+    }
+    .navBar {
+      grid-template-columns: 80px 320px 1fr 160px;
+    }
+    .hamburger {
+        display: block;
+        grid-column: 4;
+    }
+}
+  
+/* Small devices */
+@media only screen and (max-width: 600px) {
+    .navBar a {
+        display: none;
+    }
+    .navBar {
+    grid-template-columns: 80px 260px auto;
+    }
+    .hamburger {
+        display: block;
+        grid-column: 3;
+    }
+}
+  
+/*Extra Small devices */
+@media only screen and (max-width: 425px) {
+    .navBar {
+        grid-template-columns: 80px auto auto;
+        }
+    .navBar h2 {
+        font-size: 120%;
+    }
+    
+    .navBar h2:hover {
+        font-size: 140%;
+    }
+}

@@ -1,0 +1,512 @@
+.gridContainer {
+  display: grid;
+  grid-template-rows: 700px 1400px;
+  grid-row-gap: 64px;
+}
+
+.eventsContainer {
+  grid-row: 1;
+
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+}
+
+.slideContainer {
+  grid-column: 1;
+
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 100%;
+}
+
+.slideContainer2 {
+  position: relative;
+
+  margin: auto 0px;
+}
+
+.slides {
+  display: flex;
+  margin: auto;
+
+  width: 70%;
+  height: 90%;
+}
+
+.slides img {
+  position: relative;
+  max-width: 560px;
+  max-height: 400px;
+  height: auto;
+
+  display: flex;
+  margin: auto;
+  
+  /*filter: drop-shadow(0px 0px 10px rgba(0,0,0,.5));*/
+
+  transition: transform 0.3s ease;
+}
+
+.slideContainer img:hover {
+  transform: translateY(-32px);
+  /*transform: scale(0.9, 0.9);*/
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  z-index: 998;
+  font-size: 128px;
+
+  top: 50%;
+  transform: translate(0,-50%);
+
+  opacity: 0.75;
+  transition: opacity .3s ease;
+
+  filter: drop-shadow(6px 6px 6px gray);
+}
+
+.arrow:hover {
+  opacity: 1;
+}
+
+@keyframes clickArrowMain {
+  50% {filter: drop-shadow(2px 2px 2px gray);}
+  100% {filter: drop-shadow(6px 6px 6px gray);}
+}
+
+.arrow:not(:active) {
+  animation-name: clickArrowMain;
+  animation-duration: 0.8s;
+}
+
+.arrR {
+  right: 0;
+}
+
+.slideDescContainer {
+  grid-column: 2;
+
+  text-align: right;
+
+  background-color: black;
+  color: white;
+}
+
+.slideDescContainer2 {
+  margin-right: 32px;
+}
+
+.slideDescContainer h4 {
+  width: fit-content;
+  margin-left: auto;
+  margin-top: 10%;
+}
+
+.slideDescContainer h2 {
+  width: fit-content;
+  margin-left: auto;
+  margin-top: 25%;
+
+  font-size: 180%;
+
+  position: relative;
+}
+
+.slideDescContainer p {
+  width: fit-content;
+  margin-left: 16px;
+  margin-top: 5%;
+
+  font-size: 120%;
+}
+
+.dot {
+  cursor: pointer;
+  width: fit-content;
+  margin-left: 4px;
+  margin-top: 5%;
+
+  display: inline-block;
+
+  width: 20%;
+  height: 8px;
+  border: 2px white solid;
+  transition: background-color .3s ease;
+}
+
+.dot:hover {
+  background-color: white;
+}
+
+.activeDot {
+  background-color: white;
+}
+
+.blot {
+  position: absolute;
+  z-index: 1;
+  
+  width: 100%;
+  height: 100%;
+
+  transform: scaleX(0);
+  transform-origin: bottom right;
+
+  background-color: gold;
+}
+
+/*content 2*/
+.itemListContainer {
+  grid-row: 2;
+
+  display: grid;
+  grid-template-rows: 7% 24% 7% 24% 7% 31%;
+}
+
+.itemListContainer h2 {
+  grid-row: span 1;
+  margin-top: auto;
+  margin-bottom: 16px;
+
+  margin-left: 16px;
+}
+
+.newArrivalContainer {
+  grid-row: span 1;
+
+  overflow-x: hidden;
+}
+
+.bestSellerContainer {
+  position: relative;
+  grid-row: span 1;
+
+  overflow-x: hidden;
+}
+
+.bestSellerContainer .arrow {
+  position: fixed;
+}
+
+.categoriesContainer {
+  grid-row: span 1;
+}
+
+.arrowContainer {
+  position: relative;
+}
+
+.cardContainer {
+  position: relative;
+
+  width: 100%;
+  height: fit-content;
+
+  white-space: nowrap;
+  overflow-x: hidden;
+
+  scroll-behavior: smooth;
+}
+
+.cardArrow {
+  cursor: pointer;
+  z-index: 998;
+  grid-row: 1;
+  grid-column: 1;
+  position: absolute;
+
+  top: 50%;
+  transform: translate(0, -50%);
+
+  width: 80px;
+  height: 80px;
+
+  border-radius: 16px;
+  background-color: gold;
+  color: white;
+
+  opacity: 0.5;
+  transition: opacity .3s ease;
+}
+
+.cardArrow:hover {
+  opacity: 1;
+}
+
+@keyframes clickArrow {
+  50% {width: 96px; height: 96px;}
+  100% {width: 80px; height: 80px;}
+}
+
+.cardArrow:not(:active) {
+  animation-name: clickArrow;
+  animation-duration: 0.4s;
+}
+
+.cardArrow.arrL {
+  left: -1%;
+
+  box-shadow:  6px 1px 8px rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cardArrow.arrR {
+  right: -1%;
+
+  box-shadow:  -6px 1px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cardArrow img {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+}
+
+.productCards {
+  height: 100%;
+  width: 25%;
+  margin-left: 32px;
+
+  display: inline-block;
+}
+
+.productCards img {
+  max-width: 80%;
+  height: auto;
+
+  display: flex;
+  margin: auto;
+
+  transition: transform .3s ease;
+}
+
+.productCards p {
+  height: fit-content;
+  width: fit-content;
+  margin: auto;
+
+  font-size: 150%;
+
+  position: relative;
+}
+
+.blot2 {
+  position: absolute;
+  z-index: -1;
+  
+  width: 100%;
+  height: 100%;
+
+  transform: scaleX(0);
+  transform-origin: bottom right;
+
+  transition: transform .3s ease;
+
+  background-color: gold;
+}
+
+.productCards:hover img {
+  transform: translateY(-16px);
+}
+
+.productCards:hover .blot2 {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.categoriesContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+}
+
+.catContainer {
+  grid-column: span 1;
+  margin: 16px;
+
+  height: 80%;
+
+  border-radius: 16px;
+  box-shadow:  4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: box-shadow .3s ease;
+}
+
+.catContainer:hover {
+  box-shadow:  6px 12px 0 rgba(0, 0, 0, 0.3), 0 9px 30px 0 rgba(0, 0, 0, 0.3);
+}
+
+.catContainer:active {
+  box-shadow:  4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.catImage {
+  margin: 32px;
+  display: relative;
+}
+
+.catContainer img {
+  max-width: 80%;
+  height: auto;
+
+  display: flex;
+  margin: auto;
+}
+
+/* Medium devices */
+@media only screen and (max-width: 768px) {
+  .gridContainer {
+    display: grid;
+    grid-template-rows: 550px 1400px;
+    grid-row-gap: 64px;
+  }
+
+  .slides img {
+    max-width: 240px;
+    max-height: 240px;
+  }
+  .slideDescContainer h2 {
+    font-size: 170%;
+  }
+  .slideDescContainer p {
+    font-size: 110%;
+  }
+
+  .itemListContainer {
+    grid-template-rows: 5% 21% 5% 21% 5% 43%;
+  }
+
+  .productCards {
+    width: 35%;
+  }
+  .cardArrow {
+    width: 64px;
+    height: 64px;
+  }
+
+  .categoriesContainer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+  }
+  .catContainer {
+    height: 80%;
+  }
+  .catContainer img {
+    max-width: 40%;
+  }
+}
+
+/* Small devices */
+@media only screen and (max-width: 600px) {
+  .eventsContainer {
+    display: grid;
+    grid-template-rows: 6fr 4fr;
+    grid-template-columns: 1fr;
+  }
+  .slideContainer {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .slideDescContainer {
+    grid-row: 2;
+    grid-column: 1;
+    text-align: center;
+  }
+  .slideDescContainer2 {
+    margin: 0;
+    
+  }
+  .slideDescContainer h4 {
+    margin-top: 5%;
+  }
+  .slideDescContainer h2 {
+    margin: auto;
+    margin-top: 5%;
+    font-size: 160%;
+  }
+  .slideDescContainer p {
+    margin-top: 5%;
+    font-size: 100%;
+    margin: auto 16px;
+    text-align: justify;
+  }
+  .dot {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .itemListContainer {
+    grid-template-rows: 5% 16% 5% 16% 5% 53%;
+  }
+  .productCards {
+    width: 50%;
+  }
+  .productCards img {
+    max-width: 100%;
+  }
+  .productCards p {
+    font-size: 110%;
+  }
+  .cardArrow {
+    width: 48px;
+    height: 48px;
+  }
+
+  .catContainer {
+    height: 70%;
+  }
+  .catContainer img {
+    max-width: 80%;
+  }
+  .catContainer h2 {
+    font-size: 120%;
+  }
+}
+
+/*Extra Small devices */
+@media only screen and (max-width: 425px) {
+  .catContainer {
+    height: 55%;
+  }
+  .catContainer img {
+    max-width: 100%;
+  }
+  .catContainer h2 {
+    font-size: 120%;
+  }
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.catContainer img:hover {
+  animation: shake 1s ease;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.catContainer h2 {
+  width: fit-content;
+  height: fit-content;
+
+  margin: auto;
+  margin-top: 16px;
+}

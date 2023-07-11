@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.gridContainer {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin: 32px auto;
+}
+
+.prodCards {
+    width: 300px;
+    height: 400px;
+    margin: 16px;
+    padding: 8px;
+
+    border-radius: 32px;
+
+    box-shadow:  4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: box-shadow .3s ease;
+
+    display: grid;
+    grid-template-rows: 60% 20% 20%;
+
+    text-align: center;
+}
+
+.prodCards:hover {
+    box-shadow:  6px 12px 0 rgba(0, 0, 0, 0.3), 0 9px 30px 0 rgba(0, 0, 0, 0.3);
+}
+
+.prodCards:active {
+    box-shadow:  4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cardImg img{
+    height: 200px;
+    max-width: 290px;
+
+    display: flex;
+    margin: auto;
+    margin-top: 20%;
+}
+
+.prodCards h2 {
+    position: relative;
+
+    margin: auto;
+    margin-bottom: 0;
+
+    font-size: 140%;
+}
+
+.prodCards h3 {
+    font-size: 180%;
+}
+

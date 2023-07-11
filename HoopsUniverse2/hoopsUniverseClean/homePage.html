@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/skeleton.css">
+        <link rel="stylesheet" href="CSS/ngasalPageCSS.css">
+        <script src="external/jquery-3.6.0.js"></script>
+        <script src="JS/ngasalPageJS.js"></script>
+        <title>home page</title>
+    </head>
+    <body>
+        <div class="navPlaceHolder"></div>
+        <div class="navBar">
+            <img id="navBarLogo" src="resources/logos/mainLogo.png">
+            <h2><span class="blot0"></span>HOOPS UNIVERSE</h2>
+            <a id="home" href="homePage.html">HOME</a>
+            <a id="shoes" href="shoePage.html">SHOES</a>
+            <a id="acc" href="accPage.html">ACCESSORIES</a>
+            <a id="faq" href="formPage/FAQ.html">FAQ</a>
+
+            <!--Mobile-->
+            <div class="hamburger">
+              <div class="ham1"></div>
+              <div class="ham2"></div>
+              <div class="ham3"></div>
+            </div>
+        </div>
+        <div class="navMenu">
+            <ul>
+              <li><a href="homePage.html"><span class="blot0"></span>HOME</a></li>
+              <li><a href="shoePage.html"><span class="blot0"></span>SHOES</a></li>
+              <li><a href="accPage.html"><span class="blot0"></span>ACCESSORIES</a></li>
+              <li><a href="formPage/FAQ.html"><span class="blot0"></span>FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer">
+          <h3>&copy;2021. All rights reserved.</h3>
+          <img class="ig" src="resources/logos/instagram.svg">
+          <img class="yt" src="resources/logos/youtube.svg">
+        </div>
+        <div class="gridContainer">
+            <div class="eventsContainer">
+              <div class="slideContainer">
+                <div class="slideContainer2">
+                  <span class="arrow arrL" onclick="arrowSlide(-1)">&#8249;</span>
+                  <span class="arrow arrR" onclick="arrowSlide(1)">&#8250;</span>
+                  <div class="slides"><img src="resources/images/niceBall.png"></div>
+                  <div class="slides"><img src="resources/images/niceHoops.png"></div>
+                  <div class="slides"><img src="resources/images/niceShoe.png"></div>
+                  <div class="slides"><img src="resources/images/niceJersey.png"></div>
+                </div>
+              </div>
+              <div class="slideDescContainer">
+                <div class="slideDescContainer2">
+                  <h4 class="eventType activeEventType">Welcome</h4>
+                  <h4 class="eventType">Event</h4>
+                  <h4 class="eventType">News</h4>
+                  <h4 class="eventType">Promotions</h4>
+                  <h2 class="eventTitle activeEventTitle"><span class="blot"></span>Welcome to Hoops Universe</h2>
+                  <h2 class="eventTitle"><span class="blot"></span>Don't Miss Out the Summer Sale</h2>
+                  <h2 class="eventTitle"><span class="blot"></span>Anniversaries of Our Website</h2>
+                  <h2 class="eventTitle"><span class="blot"></span>Check Out The New Nike Airsomething</h2>
+                  <p class="eventPar activeEventPar">The place where you can get the latest events on all things about basketball. 
+                    Also get your basketball need and 
+                    apparell easily here. What's more we have all the latest shoes and accessories that can give you the extra 
+                    bling you need to score those points.
+                  </p>
+                  <p class="eventPar">Summer is here and it's time to celebrate. Step into the court 
+                    with the newest seasonal apparell that only
+                    exist for a limited time. The sun would certainly highlight you as the key player of the game with our
+                    premium quality shoes and accessories. Shine on the court today.
+                  </p>
+                  <p class="eventPar">The date is near to the the three year mark anniversaries 
+                    of our website. We're planning an event on 
+                    19 August at Los Angeles and we're inviting you now. Hop on into our closest store to get the details
+                    and sign yourself up to limited edition products that only exist on the event now.
+                  </p>
+                  <p class="eventPar">The Nike Airsomething finally arrives with a blast. 
+                    The newest design and technology maximizes
+                    aerodynamics and ensures that you'll have the most awe inspiring jump the crowd would go wild for.
+                    Step up your games by jumping in and ordering it now.
+                  </p>
+                  <div class="dot activeDot" onclick="bulletSlide(0)"></div>
+                  <div class="dot" onclick="bulletSlide(1)"></div>
+                  <div class="dot" onclick="bulletSlide(2)"></div>
+                  <div class="dot" onclick="bulletSlide(3)"></div>
+                </div>
+              </div>
+            </div>
+            <div class="itemListContainer">
+              <h2>New Arrival</h2>
+              <div class="newArrivalContainer">
+                <div class="arrowContainer">
+                  <div class="cardArrow arrL" id="back1"><img src="resources/icons/arrowLeft.png"></div>
+                  <div class="cardArrow arrR" id="forward1"><img src="resources/icons/arrowRight.png"></div>
+                  <div class="cardContainer" id="container1">
+                    <a href="/formPage/shoes4.html">
+                      <div class="productCards">
+                        <img src="resources/products/snek/Adapt BB 2.0  alternate nike mag - $189.png">
+                        <p><span class="blot2"></span>Adapt BB 2.0  alternate nike mag</p>
+                        <p><span class="blot2"></span>$189</p>
+                      </div>
+                    </a>
+                    <a href="/formPage/shoes2.html">
+                      <div class="productCards">
+                        <img src="resources/products/snek/Adapt BB 2.0 Nike Mag - $350.png">
+                        <p><span class="blot2"></span>Adapt BB 2.0 Nike Mag</p>
+                        <p><span class="blot2"></span>$350</p>
+                      </div>
+                    </a>
+                    <a href="/formPage/shoes1.html">
+                      <div class="productCards">
+                        <img src="resources/products/snek/Adapt BB 2.0 White Cement - $400.png">
+                        <p><span class="blot2"></span>Adapt BB 2.0 White Cement</p>
+                        <p><span class="blot2"></span>$400</p>
+                      </div>
+                    </a>
+                    <a href="/formPage/shoes3.html">
+                      <div class="productCards">
+                        <img src="resources/products/snek/Adapt BB black - $350.png">
+                        <p><span class="blot2"></span>Adapt BB black</p>
+                        <p><span class="blot2"></span>$350</p>
+                      </div>
+                    </a>
+                    <a href="/formPage/shoes5.html">
+                      <div class="productCards">
+                        <img src="resources/products/snek/Adapt_BB_Nike__mag_-__415-removebg-preview.png">
+                        <p><span class="blot2"></span>Adapt BB Nike mag</p>
+                        <p><span class="blot2"></span>$415</p>
+                      </div>
+                    </a>
+                    <a href="formPage/shoes11.html">
+                      <div class="productCards">
+                        <img src="resources/products/snek/Air Fear of God 1 Black - $925.png">
+                        <p><span class="blot2"></span>Air Fear of God 1 Black</p>
+                        <p><span class="blot2"></span>$925</p>
+                      </div>
+                    </a>
+                    <a href="formPage/shoes12.html">
+                      <div class="productCards">
+                        <img src="resources/products/snek/Air Fear of God 1 Oatmeal - $590.png">
+                        <p><span class="blot2"></span>Air Fear of God 1 Oatmeal</p>
+                        <p><span class="blot2"></span>$590</p>
+                      </div>
+                    </a>
+                    <a href="formPage/shoes13.html">
+                      <div class="productCards">
+                        <img src="resources/products/snek/Air Fear of God 1 Triple Black - $450.png">
+                        <p><span class="blot2"></span>Air Fear of God 1 Triple Black</p>
+                        <p><span class="blot2"></span>$450</p>
+                      </div>
+                    </a>
+                    <a href="formPage/shoes9.html">
+                      <div class="productCards">
+                        <img src="resources/products/snek/Air Jordan 11 Retro Concord 2018 - $450.png">
+                        <p><span class="blot2"></span>Air Jordan 11 Retro Concord 2018</p>
+                        <p><span class="blot2"></span>$450</p>
+                      </div>
+                    </a>
+                    <a href="formPage/shoes10.html">
+                      <div class="productCards">
+                        <img src="resources/products/snek/Air Jordan 11 Retro Jubilee 25th Anniversary - $244.png">
+                        <p><span class="blot2"></span>Air Jordan 11 Retro Jubilee 25th Anniversary</p>
+                        <p><span class="blot2"></span>$244</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                
+              </div>
+              <h2>Best Seller</h2>
+              <div class="bestSellerContainer">
+                <div class="arrowContainer">
+                  <button class="cardArrow arrL" id="back2"><img src="resources/icons/arrowLeft.png"></button>
+                  <button class="cardArrow arrR" id="forward2"><img src="resources/icons/arrowRight.png"></button>
+                  <div class="cardContainer" id="container2">
+                    <a href="formPage/shoes6.html">
+                      <div class="productCards">
+                      <img src="resources/products/snek/Air Jordan 4 Retro OG Fire Red 2020 - $279.png">
+                      <p><span class="blot2"></span>Air Jordan 4 Retro OG Fire Red 2020</p>
+                      <p><span class="blot2"></span>$279</p>
+                    </div>
+                  </a>
+                    <a href="formPage/shoes7.html">
+                      <div class="productCards">
+                      <img src="resources/products/snek/Air Jordan 5 Retro Stealth 2.0 - $224.png">
+                      <p><span class="blot2"></span>Air Jordan 5 Retro Stealth 2.0</p>
+                      <p><span class="blot2"></span>$224</p>
+                    </div>
+                  </a>
+                    <a href="formPage/shoes8.html">
+                      <div class="productCards">
+                      <img src="resources/products/snek/Air Jordan 7 Retro Flint 2021 - $190.png">
+                      <p><span class="blot2"></span>Air Jordan 7 Retro Flint 2021</p>
+                      <p><span class="blot2"></span>$190</p>
+                    </div>
+                  </a>
+                    <a href="formPage/shoes16.html">
+                      <div class="productCards">
+                      <img src="resources/products/snek/Air Jordan 9 Retro Kobe - $292.png">
+                      <p><span class="blot2"></span>Air Jordan 9 Retro Kobe</p>
+                      <p><span class="blot2"></span>$292</p>
+                    </div>
+                  </a>
+                    <a href="formPage/shoes14.html">
+                      <div class="productCards">
+                      <img src="resources/products/snek/Fear of God 1 Light Bone - $750.png">
+                      <p><span class="blot2"></span>Fear of God 1 Light Bone</p>
+                      <p><span class="blot2"></span>$750</p>
+                    </div>
+                  </a>
+                    <a href="formPage/shoes15.html">
+                      <div class="productCards">
+                      <img src="resources/products/snek/Fear of God 1 Sail - $770.png">
+                      <p><span class="blot2"></span>Fear of God 1 Sail</p>
+                      <p><span class="blot2"></span>$770</p>
+                    </div>
+                  </a>
+                    <a href="formPage/shoes18.html">
+                      <div class="productCards">
+                      <img src="resources//products/snek/Kobe 11 Fundamental - $160.png">
+                      <p><span class="blot2"></span>Kobe 11 Fundamental</p>
+                      <p><span class="blot2"></span>$160</p>
+                    </div>
+                  </a>
+                    <a href="formPage/shoes17.html">
+                      <div class="productCards">
+                      <img src="resources/products/snek/Kobe 9  elite premium what the kobe - $450.png">
+                      <p><span class="blot2"></span>Kobe 9  elite premium what the kobe</p>
+                      <p><span class="blot2"></span>$450</p>
+                    </div>
+                  </a>
+                    <a href="formPage/shoes23.html">
+                      <div class="productCards">
+                      <img src="resources/products/snek/LeBron 17 LeBron 4 Grafiti - $225.png">
+                      <p><span class="blot2"></span>LeBron 17 LeBron 4 Grafiti</p>
+                      <p><span class="blot2"></span>$225</p>
+                    </div>
+                  </a>
+                    <a href="formPage/shoes24.html">
+                      <div class="productCards">
+                      <img src="resources/products/snek/LeBron 17 Monstars NBA ASG 2020 - $225.png">
+                      <p><span class="blot2"></span>LeBron 17 Monstars NBA ASG 2020</p>
+                      <p><span class="blot2"></span$225</p>
+                      </div>
+                  </a>
+                  </div>
+                </div>
+              </div>
+              <h2>Categories</h2>
+              <div class="categoriesContainer">
+                <div class="catContainer catBasketball">
+                  <div class="catImage"><img src="resources/logos/catBasketball3.png"></div>
+                  <h2>Basketball</h2>
+                </div>
+                <div class="catContainer catJersey">
+                  <div class="catImage"><img src="resources/logos/catJersey5.png"></div>
+                  
+                  <h2>Jersey</h2>
+                </div>
+                <div class="catContainer catJacket">
+                  <div class="catImage"><img src="resources/logos/catJacket3.png"></div>
+                  
+                  <h2>Jacket</h2>
+                </div>
+                <div class="catContainer catPads">
+                  <div class="catImage"><img src="resources/logos/catElbow1.png"></div>
+                  
+                  <h2>Knee Pads</h2>
+                </div>
+              </div>
+            </div>
+        </div>
+    </body>
+</html>

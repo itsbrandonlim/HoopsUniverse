@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 64px 1fr 64px;
+    height: auto;
+}
+
+.navPlaceHolder{
+    grid-row: 1;
+}
+
+.navBar {
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    height: 64px;
+
+    background-color: blue;
+
+    box-shadow: 0px 8px 4px -4px grey;
+}
+
+.navBar img {
+    position: fixed;
+    right: 0;
+
+    width: 64px;
+}
+
+.navMenu {
+    display: none;
+
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    height: 240px;
+
+    top: 64px;
+
+    background-color: blue;
+}
+
+.navMenu li{
+    display: block;
+
+    width: 100%;
+    height: 60px;
+}
+
+.navMenu a {
+    font-size: 32px;
+    margin-left: 16px;
+    margin-top: 8px;
+
+    text-decoration: none;
+}
+
+.footer {
+    grid-row: 3;
+
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+}
+
+.gridContainer {
+    grid-row: 2;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-rows: 1000px 1000px;
+}
+
+.eventsContainer {
+    grid-row: 1;
+
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+
+    height: 1000px;
+    width: 100%;
+}
+
+.itemListContainer {
+    grid-row: 2;
+
+    height: 1000px;
+
+    display: grid;
+    grid-template-rows: 8% 25% 8% 25% 8% 26%;
+}
+
+.slideShow {
+    grid-column: 1;
+
+    height: 100%;
+    width: 100%;
+}
+
+.slidesContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.slides {
+    width: 100%;
+    height: 100%;
+}
+
+.slides img{
+    width: 100%;
+    height: 100vh;
+
+    max-height: 100%;
+}
+
+.slideBullets {
+    grid-column: 2;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.bullets {
+    display: inline-block;
+
+    height: 15px;
+    width: 15px;
+
+    border-style: solid;
+    border-width: 3px;
+
+    transition: background-color 0.4s;
+}
+
+.activeBullet {
+    background-color: blue;
+}
+
+.bullets:hover {
+    background-color: black;
+}
+
+#newArrivalTitle {
+    grid-row: span 1;
+
+    margin: auto;
+    margin-bottom: 0;
+    margin-left: 8px;
+}
+
+.newArrival {
+    grid-row: span 1;
+
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: visible;
+
+    width: 100%;
+    height: 100%;
+
+    box-shadow: none;
+    background-color: white;
+}
+
+.arrow.next {
+    right: 0;
+    transform: translate(0%, 140%);
+}
+
+.arrow.prev {
+    transform: translate(0%, 140%); 
+}
+
+.arrow {
+    display: none;
+    position: fixed;
+    background-color: blue;
+    opacity: 75%;
+    height: 48px;
+    width: 48px;
+}
+
+.arrow img {
+    height: 100%;
+    width: 100%;
+}
+
+.newArrivalCard{
+    display: inline-block;
+
+    width: 50%;
+    height: 100%;
+}
+
+.newArrivalCard p {
+    text-align: center;
+    color: black;
+}
+
+.newArrivalCard img {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    max-height: 75%;
+    margin: auto;
+}
+
+.newArrivalCard img:hover {
+    margin-bottom: -8px;
+}
+
+ #bestSellerTitle {
+    grid-row: span 1;
+
+    margin: auto;
+    margin-bottom: 0;
+    margin-left: 8px;
+}
+
+.bestSeller {
+    grid-row: span 1;
+
+    white-space: nowrap;
+    overflow: scroll;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: white;
+}
+
+#categoriesTitle {
+    grid-row: span 1;
+
+    margin: auto;
+    margin-bottom: 0;
+    margin-left: 8px;
+}
+
+.categories {
+    grid-row: span 1;
+
+    white-space: nowrap;
+    overflow: scroll;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: white;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .gridContainer {
+        grid-template-rows: repeat(26, 64px);
+    }
+    .slideShow {
+        grid-row: span 7;
+    }
+    .newArrivalCard{
+        width: 32%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1024px) {
+    .gridContainer {
+        grid-template-rows: repeat(28, 64px);
+    }
+    .slideShow {
+        display: flex;
+        margin: auto;
+        margin-top: 48px;
+    }
+
+    .slideShow {
+        grid-row: span 9;
+
+        height: 90%;
+        width: 50%;
+    }
+    
+    .slideBullets {
+        grid-row: span 1;
+        grid-column: 2 / span 2;
+        margin: auto;
+        margin-top: 0;
+
+        text-align: center;
+    }
+    
+    .bullets {
+        display: inline-block;
+    
+        height: 15px;
+        width: 15px;
+    
+        border-style: solid;
+        border-width: 3px;
+    
+        transition: background-color 0.4s;
+    }
+    
+    .activeBullet {
+        background-color: blue;
+    }
+    
+    .bullets:hover {
+        background-color: black;
+    }
+
+    .newArrivalCard{
+        width: 24%;
+    }
+
+    .arrow {
+        display: block;
+    }
+
+    .cardContainer {
+        scroll-behavior: smooth;
+        overflow: hidden;
+    }
+}
+
+
+
+
+

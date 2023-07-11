@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/skeleton.css">
+    <link rel="stylesheet" href="../CSS/form.css">
+    <script src="../external/jquery-3.6.0.js"></script>
+    <script src="JS/ngasalPageJS.js"></script>
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="navPlaceHolder"></div>
+    <div class="navBar">
+        <img id="navBarLogo" src="../resources/logos/mainLogo.png">
+        <h2><span class="blot0"></span>HOOPS UNIVERSE</h2>
+        <a id="home" href="../homePage.html">HOME</a>
+        <a id="shoes" href="../shoePage.html">SHOES</a>
+        <a id="acc" href="../accPage.html">ACCESSORIES</a>
+        <a id="faq" href="FAQ.html">FAQ</a>
+
+        <!--Mobile-->
+        <div class="hamburger">
+          <div class="ham1"></div>
+          <div class="ham2"></div>
+          <div class="ham3"></div>
+        </div>
+    </div>
+    <div class="navMenu">
+        <ul>
+            <li><a href="../homePage.html"><span class="blot0"></span>HOME</a></li>
+            <li><a href="../shoePage.html"><span class="blot0"></span>SHOES</a></li>
+            <li><a href="../accPage.html"><span class="blot0"></span>ACCESSORIES</a></li>
+            <li><a href="FAQ.html"><span class="blot0"></span>FAQ</a></li>
+        </ul>
+    </div>
+
+    <div class="form">
+
+      <div class="form-konten kotak img">
+        <img src="../resources/products/snek/Air Jordan 9 Retro Kobe - $292.png" alt="">
+      </div>
+
+      <div class="form-konten kotak sepatu">
+        <div class="form-konten judul">
+          <h1>Air Jordan 9 Retro Kobe</h1>
+          <h2>$292</h2>
+        </div>
+      </div>
+
+      <div class="form-konten kotak">
+        <div class="form-konten judul">
+          <h1><span class="oke1 satu"></span>Credit Card</h1>
+        </div>
+
+        <form>
+
+          <div class="form-konten satu">
+            <div class="input-form">
+              <input type="text" name="firstname" id="firstname" required autocomplete="off" placeholder="name">
+              <label for="firstname" >First Name</label>
+            </div>
+
+            <div class="input-form">
+              <input type="text" name="lastname" id="lastname" required autocomplete="off" placeholder="name">
+              <label for="lastname">Last Name</label>
+            </div>
+
+            <div class="input-form">
+              <input type="text" name="cardnumber" id="cardnumber" required autocomplete="off" placeholder="name">
+              <label for="cardnumber">Credit Card Number</label>
+            </div>
+
+            <div class="input-form">
+              <input type="text" name="securitycode" id="securitycode" required autocomplete="off" placeholder="name">
+              <label for="securitycode">Security Code</label>
+            </div>
+
+            <div class="input-form">
+              <input type="date" name="expirationdate" id="expirationdate" required autocomplete="off">
+              <label for="expirationdate">Expiration Date</label>
+            </div>
+
+            <div class="input-form">
+              <input type="text" name="postalcode" id="postalcode" required autocomplete="off" placeholder="name">
+              <label for="postalcode">Postal Code</label>
+            </div>
+          </div>
+
+      </div>
+
+      <div class="form-konten kotak">
+        <div class="form-konten judul">
+          <h1><span class="oke1 dua"></span>Personal Detail</h1>
+        </div>
+
+
+          <div class="form-konten satu">
+
+            <div class="input-form">
+              <input type="text" name="firstname2" id="firstname2" required autocomplete="off" placeholder="name">
+              <label for="firstname2">First Name</label>
+            </div>
+
+            <div class="input-form">
+              <input type="text" name="lastname2" id="lastname2" required autocomplete="off" placeholder="name">
+              <label for="lastname2">Last Name</label>
+            </div>
+
+            <div class="input-form">
+              <input type="email" name="email" id="email" required autocomplete="off" placeholder="name">
+              <label for="email">Email</label>
+            </div>
+
+            <div class="input-form">
+              <input type="text" name="telephone" id="telephone" required autocomplete="off" placeholder="name">
+              <label for="telephone">Telephone</label>
+            </div>
+
+            <div class="input-form">
+              <input type="number" name="age" id="age" required autocomplete="off" placeholder="name">
+              <label for="age">Age</label>
+            </div>
+
+            <div class="input-form gender">
+              <label for="" id="gender"><span class="oke1"></span>Gender</label><br>
+              <div class="block">
+                <input type="radio" name="gender" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Female</label>
+              </div>
+            </div>
+          </div>
+
+      </div>
+
+      <div class="form-konten kotak">
+        <div class="form-konten judul">
+          <h1><span class="oke1 tiga"></span>Billing Address</h1>
+        </div>
+
+        <div class="form-konten satu">
+
+          <div class="input-form address">
+            <input type="text" name="address" id="address" required autocomplete="off" placeholder="name">
+            <label for="address">Streed Address</label>
+          </div>
+
+          <div class="input-form">
+            <input type="text" name="city" id="city" required autocomplete="off" placeholder="name">
+            <label for="city">City</label>
+          </div>
+
+          <div class="input-form">
+            <input type="text" name="province" id="province" required autocomplete="off" placeholder="name">
+            <label for="province">Province</label>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="form-konten kotak">
+        <div class="form-konten judul">
+          <h1><span class="oke1 empat"></span>Additional Requests</h1>
+        </div>
+
+        <div class="teks">
+          <textarea name="add"></textarea>
+        </div>
+      </div>
+
+      <div class="form-konten kotak submit">
+        <input type="submit" name="submit" value="Purchase Product">
+        </form>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h3>@2021. All rights reserved.</h3>
+      <img class="ig" src="../resources/logos/instagram.svg">
+      <img class="yt" src="../resources/logos/youtube.svg">
+    </div>
+  </body>
+</html>
